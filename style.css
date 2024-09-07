@@ -1,14 +1,22 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #C8E0BF; /* Cor de fundo da página */
+    background-color: #DDDDDD; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
+    min-height: 100vh; /* Define a altura mínima para 100% da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+    background-image: url("img/imagem_gatinhos.webp");
+    background-size: cover; /* Ajuste a imagem de fundo para cobrir toda a área */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    overflow: hidden;
 }
 
 /* Estiliza os títulos h1 */
@@ -17,6 +25,9 @@ h1 {
     color: #222831; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    font-family: "Shrikhand", serif;
+     font-weight: 400;
+    font-style: normal;
 }
 
 /* Estiliza as seções da página */
@@ -60,7 +71,6 @@ section button:hover {
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
@@ -68,7 +78,7 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
+    background-color: rgba(241, 238, 238, 0.5); /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -78,13 +88,13 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #aa74c6; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
+    color: #aa74c6; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -97,17 +107,44 @@ section button:hover {
     color: #45474B; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
+ /*Gif gatinho*/
+ .gif-container {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 90%; /* Define a largura do container como 100% da página */
+    height: 100px; /* Define a altura desejada do container para o GIF */
+    overflow: hidden; /* Garante que o GIF não saia do container */
+    animation: meugif 10s infinite linear; /* Define a animação */
+}
 
-/* Estiliza o rodapé da página */
+@keyframes meugif {
+    0% { 
+        transform: translateX(0); /* Posição inicial */
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(50%);
+        opacity: 1;
+    }
+    100% { 
+        transform: translateX(100%); /* Posição final, movendo o GIF para fora da tela para a esquerda */
+        opacity: 1;
+    }
+}
+
+
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
-    width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: rgba(75, 72, 72, 0.5); /* Preto com 50% de opacidade */
+    color: #fff; /* Cor do texto (branco) */
+    text-align: center; 
+    padding: 10px; /* Reduzimos o padding para um visual mais compacto */
+    width: 100%; 
+    position: fixed; /* Posição fixa para o footer */
+    bottom: 0; 
+    font-size: 0.9rem; /* Tamanho da fonte ligeiramente menor */
+    border-top: none; /* Removemos a borda superior */
+    box-shadow: none; /* Removemos a sombra */
 }
 
 @media (max-width: 768px) {
