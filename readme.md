@@ -1,3 +1,4 @@
+
 ## Biblioteca Felina - Um guia para os amantes de gatos
 
 Este projeto tem como objetivo criar uma página web interativa para amantes de gatos, que permite pesquisar informações sobre diferentes raças felinas. O usuário pode digitar o nome da raça desejada e obter informações detalhadas sobre suas características, pelagem, expectativa de vida e país de origem. 
@@ -17,6 +18,12 @@ Este projeto tem como objetivo criar uma página web interativa para amantes de 
     * Expectativa de vida
     * País de origem
 * **Links para mais informações:** Um link para a página oficial da raça na Petz é fornecido para acesso a informações mais completas.
+
+**Site**
+
+* **A imagem de background do site foi criada pelo DALL-E 2:**
+* **Foto do site:**
+  ![Foto do site](img/site.png) 
 
 **Deploy:**
 
@@ -48,3 +55,5 @@ Contribuições são bem-vindas! Você pode contribuir com o projeto:
 **Agradecimentos:**
 
 Agradecemos a todos que contribuíram para este projeto, especialmente à Alura pelo conhecimento compartilhado durante a Imersão Dev Gemini.
+
+
