@@ -49,5 +49,5 @@ function pesquisar() {
   }
 
   // Atribui os resultados gerados à seção HTML
-  section.innerHTML = resultados || "<p>Nada foi encontrado.</p>";
+  section.innerHTML = resultados || "<p>Nada foi encontrado. Digite raças como: Persa, Exótico, Agorá, Ragdoll, Siames, British Shorthair, Abíssinio, Sphynx, Vira Lata...</p>";
 }
