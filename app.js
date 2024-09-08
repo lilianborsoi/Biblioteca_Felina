@@ -49,5 +49,5 @@ function pesquisar() {
   }
 
   // Atribui os resultados gerados à seção HTMLe informa raças felinas
-  section.innerHTML = resultados || "<p>Nada foi encontrado. Digite raças como: Persa, Exótico, Agorá, Ragdoll, Siames, British Shorthair, Abíssinio, Sphynx, Vira Lata...</p>";
-}
+section.innerHTML = resultados || "<p>Nada foi encontrado. Digite raças como: Persa, Exótico, Agorá, Ragdoll, Siames, British Shorthair, Abíssinio, Sphynx, Vira Lata...</p>"
+}  // teste para execucao
