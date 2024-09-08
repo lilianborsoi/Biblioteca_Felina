@@ -31,7 +31,7 @@ O projeto foi publicado no Vercel: [link da página]((https://bibliotecafelina.v
 
 **Como usar:**
 
-1. Acesse a página da Biblioteca Felina ([link da página](https://biblioteca-felina.vercel.app/)).
+1. Acesse a página da Biblioteca Felina ([link da página](https://bibliotecafelina.vercel.app/)).
 2. Digite o nome da raça de gato desejada no campo de pesquisa.
 3. Clique no botão "Pesquisar".
 4. Os resultados da pesquisa serão exibidos na página.
