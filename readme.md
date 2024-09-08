@@ -27,7 +27,7 @@ Este projeto tem como objetivo criar uma página web interativa para amantes de 
 
 **Deploy:**
 
-O projeto foi publicado no Vercel: [link da página](https://biblioteca-felina.vercel.app/)
+O projeto foi publicado no Vercel: [link da página]((https://bibliotecafelina.vercel.app/))
 
 **Como usar:**
 
